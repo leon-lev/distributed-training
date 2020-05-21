@@ -41,7 +41,7 @@ class DataPartitioner(object):
 
 # Partitioning MNIST
 def partition_dataset(partition_sizes=None, train=True, custom=False):
-    dataset = datasets.MNIST('./data', train=train, download=True,
+    dataset = datasets.MNIST('../data', train=train, download=True,
                              transform=transforms.Compose([
                                  transforms.ToTensor(),
                                  transforms.Normalize((0.1307,), (0.3081,))
